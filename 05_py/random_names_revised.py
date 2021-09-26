@@ -1,9 +1,17 @@
-# Kevin Cao
-# SoftDev
+# Kevin Cao, Raymond Yeung, Yaying Liang Li 
+# Software Development
 # K02 -- Python Random Name Generator - Amalgamation
 # 2021-09-24
 
+
 import random
+
+
+def fill_list(file, list):
+    with open(file, 'r') as file:
+        for line in file:
+            list.append(line.rstrip('/n'))
+
 
 if __name__ == '__main__':
     # Create list for each period
@@ -11,13 +19,8 @@ if __name__ == '__main__':
     pd2 = []
 
     # Fill each list from text file
-    with open("pd1.txt", 'r') as file:
-        for line in file:
-            pd1.append(line.rstrip('/n'))
-
-    with open('pd2.txt', 'r') as file:
-        for line in file:
-            pd2.append(line.rstrip('/n'))
+    fill_list('pd1.txt', pd1)
+    fill_list('pd2.txt', pd2)
 
     # Find length of each list
     pd1_len = len(pd1)
