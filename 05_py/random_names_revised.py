@@ -5,9 +5,9 @@
 # ----------------------------------------------------------------------------
 # Pow-Wow Summary
 # Discovery: Adding to a text file is way easier than adding to a list
-# Question: How much do we have to comment our code?
-#           How much does runtime/efficiency matter?
-# Comments: Combining code is pretty fun
+# Question:  How much do we have to comment our code?
+#            How much does runtime/efficiency matter?
+# Comments:  Combining code is pretty fun
 
 import random
 
