@@ -1,6 +1,6 @@
 # Kevin Cao, Raymond Yeung, Yaying Liang Li
 # Software Development
-# K02 -- Python Random Name Generator - Amalgamation
+# K05 -- Python Random Name Generator - Amalgamation
 # 2021-09-24
 # ----------------------------------------------------------------------------
 # Pow-Wow Summary
