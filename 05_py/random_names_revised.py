@@ -32,10 +32,6 @@ names = {
 pd1_len = len(names['pd1'])
 pd2_len = len(names['pd2'])
 
-# Test to see if either list is empty
-if pd1_len < 1 or pd2_len < 1:
-    print("Lists are empty")
-
 # Choose a random person
 num = random.randint(0, pd1_len + pd2_len - 1)
 if num < pd1_len:
