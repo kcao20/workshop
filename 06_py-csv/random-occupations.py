@@ -18,8 +18,7 @@ integer fell into. This seems to work quite well!
 import csv
 import random
 
-dict = {
-}
+dict = {}
 
 with open('occupations.csv', mode='r') as file:
 
