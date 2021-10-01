@@ -1,0 +1,16 @@
+Trio Treeo: Kevin Cao, Shadman Rakib, Austin Ngan
+Softdev
+K08: Cross Pollination and Virtual Insanity
+2021-09-30
+
+$ python3 -m venv ~/myherozero
+
+This command creates a virtual environment at the specified directory.
+Think of this like a sandbox or a virtual machine. It has its own
+packages and modules that are separate from the main. This can help
+with module version control. After the directory is created, cd into
+the directory, and activate the venv by typing bin/activate. To
+deactivate the venv, type deactivate.
+
+References:
+https://pythonbasics.org/virtualenv/

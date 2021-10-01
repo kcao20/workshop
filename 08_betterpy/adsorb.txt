@@ -1,7 +1,42 @@
-Kevin Cao, Austin Ngan, Shadman Rakib
-SoftDev
-K08 -- Cross Pollination and Virtual Insanity
+Trio Treeo: Kevin Cao, Shadman Rakib, Austin Ngan
+Softdev
+K08: Cross Pollination and Virtual Insanity
 2021-09-30
 
-Team Sneakers: Michael Borczuk, Kevin Cao, Yoonah Chang
 
+Team Sneakers: Michael Borczuk, Kevin Cao, Yoonah Chang
+(https://github.com/kcao20/workshop/blob/main/06_py-csv/random-occupations.py)
+Q:
+    - Why did you use randint instead of randrange?
+C:
+    - Imported whole module
+    - Manually created weighted random selection. Cool approach.
+    - Smart to multiply the percentage by 100 so that you don’t have to deal with decimal points
+    - Included other jobs.
+C:
+    - Writing your own functions would be harder to maintain long term compared to using an active library/module.
+
+
+Fabulous Frogs: David Chong, Wen Hao Dong, Austin Ngan
+(https://github.com/austinngan/SoftDev/blob/main/06_py-csv/K06.py)
+Q: 
+    - Does the code take quotes that are not matched into account?
+C:
+    - Cool manual approach to creating a dictionary from the csv
+    - Tested code
+C:
+    - Most likely a slower method/approach
+
+
+The Red Imposter: Daniel Sooknanan, Shadman Rakib, Roshani Shrestha
+(https://github.com/OnikuSpedu/SoftDevWorkshop/blob/master/06_py-csv/06_py-csv.py)
+Q: 
+    - The total is not 100%. How does this take that into account?
+C: 
+    - Added try and except for errors
+    - Used __name__ == “__main__”
+    - Imports methods directly from module
+    - Used CSV DictReader and random choices
+C: 
+    - Will only run if it is the file being runned.   
+    - Uses the names for the columns to help with creating the final occupation dictionary. Could have checked what the keys were instead.
