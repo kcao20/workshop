@@ -17,5 +17,5 @@ if __name__ == "__main__":  # true if this file NOT imported
     app.run()
 
 '''
-It is the same as v3, but the app will only run if the file is not imported.
+It is the same as v3, but the app will only run if the file is not imported. In other words, only the main class will be run.
 '''
