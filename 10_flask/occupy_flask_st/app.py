@@ -33,7 +33,7 @@ def choose():
 
     counter = 0
 
-    # adds to counter, once it passes randomly generated number, it prints the key
+    # adds to counter, o    nce it passes randomly generated number, it prints the key
     for key in dict.keys():
         if counter + dict[key] > num:
             return(key)
