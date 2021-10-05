@@ -48,12 +48,13 @@ def choose():
 
 
 @app.route("/")  # assign fxn to route
-
 def main():
     return heading() + "<br/>" + occupations()
 
+
 def heading():
     return "<h2> Team Sneakers: Yoonah Chang (Yelena), Kevin Cao (Pipi), Michael Borczuk (Liberty and Baby Yoda) </h2>"
+
 
 def occupations():
     occupations = print_occupations()
