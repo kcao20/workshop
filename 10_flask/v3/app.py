@@ -17,4 +17,6 @@ app.run()
 
 '''
 It is the same as v2, but it turns the debugger on.
+AFTER RUNNING
+We learned that the debugger updates the page every time the file is saved (rather than having to restart the server).
 '''
