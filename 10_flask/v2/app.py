@@ -15,5 +15,5 @@ def hello_world():
 app.run()
 
 '''
-It will be similar to the v0, but with an extra print statement in the terminal that says "about to print __name__..."
+It will be similar to v0, but with an extra print statement in the terminal that says "about to print __name__..."
 '''
