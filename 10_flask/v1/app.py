@@ -15,5 +15,5 @@ def hello_world():
 app.run()
 
 '''
-It will run like v0 but it won't print any information in the terminal.
+It will run like v0 but it won't print the name of the app (__main__) in the terminal.
 '''
