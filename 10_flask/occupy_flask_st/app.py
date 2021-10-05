@@ -19,12 +19,11 @@ with open('occupations.csv', mode='r') as file:
     # add contents to dictionary, multiply by 10 to make probabilities easier
     for lines in csvFile:
         dict[lines['Job Class']] = float(lines['Percentage']) * 10
+    dict.pop('Total')
 
 
 def print_occupations():
-    dict1 = dict.copy()
-    dict1.pop('Total')
-    return "<br />".join(dict1.keys())
+    return "<br />".join(dict.keys())
 
 
 def choose():
@@ -45,7 +44,7 @@ def choose():
             # continue to next iteration so we don't print Jobless every time
             continue
         # if the random int doesn't fall within any range, there is no job
-        return("Other Job")
+    return("Other Job")
 
 
 @app.route("/")  # assign fxn to route
