@@ -1,3 +1,10 @@
+Team Sneakers: Yoonah Chang (Yelena), Kevin Cao (Pipi), Michael Borczuk (Liberty and Baby Yoda)
+SoftDev
+K12 -- Flask Template Predictions
+2021-10-07
+
+Questions: Advantages of Jinja over other engines (maybe faster)? What is {% endfor %}? Similarities to Django?
+
 Predictions:
 Q0: If we delete render_template in the beginning, we'll receive an error message, because the app doesn't know what render_template is when it is asked to return render_template, only when we point the browser to localhost:5000/my_foist_template.
 
@@ -11,3 +18,4 @@ A0: If we delete render_template, we do indeed receive an error message saying "
 A1: We were correct!
 
 A2: If we remove the foo initialization, it just uses a default title for the page. But if you delete collection = coll, it returns a blank page, because the list is empty.
+
