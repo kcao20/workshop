@@ -10,27 +10,33 @@ import csv
 
 app = Flask(__name__)  # create instance of class Flask
 
-@app.route("/occupyflaskst")  # assign fxn to route
 
+@app.route("/")
+def index():
+    return "<h1>Home Page</h1>"
+
+
+@app.route("/occupyflaskst")  # assign fxn to route
 def main():
     dict = {}
-    with open("data/occupations.csv", mode = 'r') as csvfile:
+    with open("data/occupations.csv", mode='r') as csvfile:
         file = csv.DictReader(csvfile)
 
         for lines in file:
             dict[lines['Job Class']] = float(lines['Percentage'])
 
-    return render_template( 'tablified.html', title='K13', heading=heading(), occupations=dict, occupation=randomoccupation() )
+    return render_template('tablified.html', title='K13', heading=heading(), occupations=dict, occupation=randomoccupation())
+
 
 def heading():
     return "Team PPS: Kevin Cao (Pipi), Thomas Yu (Perry), Han Zhang(Sirap)"
 
 
 def randomoccupation():
-    randomNum = random.random()* 99.8
+    randomNum = random.random() * 99.8
     dict = {}
 
-    with open("data/occupations.csv", mode = 'r') as csvfile:
+    with open("data/occupations.csv", mode='r') as csvfile:
         file = csv.DictReader(csvfile)
 
         for lines in file:
@@ -42,6 +48,7 @@ def randomoccupation():
             return ("Your occupation is: " + i)
             break
         x += j
+
 
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change
