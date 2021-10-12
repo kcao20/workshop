@@ -10,6 +10,8 @@ import csv
 
 app = Flask(__name__)  # create instance of class Flask
 
+d = {}
+
 
 @app.route("/")
 def index():
@@ -18,32 +20,25 @@ def index():
 
 @app.route("/occupyflaskst")  # assign fxn to route
 def main():
-    dict = {}
+    """ read csv file into dictionary and returns the template webpage using that dictionary """
     with open("data/occupations.csv", mode='r') as csvfile:
         file = csv.DictReader(csvfile)
-
         for lines in file:
-            dict[lines['Job Class']] = float(lines['Percentage'])
-
-    return render_template('tablified.html', title='K13', heading=heading(), occupations=dict, occupation=randomoccupation())
+            d[lines['Job Class']] = float(lines['Percentage'])
+    return render_template('tablified.html', title='K13', heading=heading(), occupations=d, occupation=randomoccupation())
 
 
 def heading():
+    """returns heading with TNPG + roster"""
     return "Team PPS: Kevin Cao (Pipi), Thomas Yu (Perry), Han Zhang(Sirap)"
 
 
 def randomoccupation():
+    """returns a random occupation with weighted percentage values for csv file"""
     randomNum = random.random() * 99.8
-    dict = {}
-
-    with open("data/occupations.csv", mode='r') as csvfile:
-        file = csv.DictReader(csvfile)
-
-        for lines in file:
-            dict[lines['Job Class']] = float(lines['Percentage'])
 
     x = 0.0
-    for i, j in dict.items():
+    for i, j in d.items():
         if x <= randomNum < x + j:
             return ("Your occupation is: " + i)
             break
