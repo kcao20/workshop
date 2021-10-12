@@ -1,0 +1,15 @@
+Team PPS: Kevin Cao (Pipi), Thomas Yu (Perry), Han Zhang(Sirap)
+SoftDev
+K13: Template for Success
+2021-10-12
+
+Flask
+* Can have multiple routes in one app. 
+* Good to have a home page.
+* Can iterate through a dictionary with Jinja2.
+
+Egoless Programming
+* Working with others is good.
+* Don't be afraid to have others look at your code for errors.
+* Outside eyes are useful for looking for bugs.
+* Reading somebody else's code could benefit your own.
