@@ -18,8 +18,6 @@ def disp_loginpage():
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    # print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
     return render_template('login.html')
@@ -27,7 +25,6 @@ def disp_loginpage():
 
 @app.route("/auth")
 def response():
-    user = request.args['username']
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
     print(app)
@@ -35,11 +32,9 @@ def response():
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    # print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return render_template("response.html", username=user, request_method=request.method)
+    return render_template("response.html", username=request.args['username'], request_method=request.method)
 
 
 if __name__ == "__main__":
