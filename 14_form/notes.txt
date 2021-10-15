@@ -1,0 +1,37 @@
+Team The Best Laptop - Jonathan W. [Loki] , Alif A. [The Eagle in the Sand], Kevin C. [Pipi] | Period 2
+SoftDev
+K14 - Form and Function/Observing forms in html/We investigated requests and responses in html files and how it related to flask & jinja as well as the function of the code to learn from it for future uses. 
+2021-10-14
+
+## app.route('/')
+
+Predictions:
+
+We predict that printing app will print the name of the app variable as defined in line 12. 
+We also predict that printing 'request' will print the memory space. 
+
+Reconcilation
+
+We were wrong about what printing request could result in. It resulted in the IP address of the localhost.
+
+Notables:
+
+request.args would always return nothing. request.headers gives information about the client and browser.
+
+## app.route('/auth')
+
+It should be the same as the login page, but we predict that the request.args will return whatever we submitted into the form.
+
+Reconcilation
+
+As predicted, the request.args returned the queries we gave in as well as the query number. 
+
+Notables
+
+After submitting the form it returns a blank page with a specified string.
+
+-----
+
+Other Notables
+
+The request obj will default to GET.
