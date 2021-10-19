@@ -76,7 +76,7 @@ def response():
 
 @app.route("/logout")
 def logoutSession():
-    landingText = "You've logged out. Enter your username below to proceed. "
+    landingText = "You've logged out. Enter your login credentials below to proceed. "
     session.pop('user', None)
     return render_template("login.html", message=landingText)
 
