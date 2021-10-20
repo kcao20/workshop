@@ -1,0 +1,21 @@
+Team The Best Laptop - Jonathan Wu [Loki] , Alif Abdullah [The Eagle in the Sand], Kevin Cao [Pipi] | Period 2
+SoftDev
+K15 - Sessions Greetings/More form handling in HTML in flask app/We worked on creating a flask app that uses session capabilities to allow a user to login and logout.
+2021-10-18
+
+
+When using different request methods, you would use request.args to get input
+when the request.method is GET, while you would have to use request.form to
+get input when the request.method is POST.
+
+You can record the user's credentials in a cookie by using session. You can
+check if someone is logged in by checking a key value in session. To log out,
+just pop that key value from the session.
+
+You can press F12 to open up the browser console in firefox. To see the cookie
+created, you can click on the storage tab.
+
+If user is not already logged in, we can check to see if the username and
+password matches. If not, we just print an error on the login page,
+prompting them to login again. If the credentials match, we add it to
+the session dictionary.

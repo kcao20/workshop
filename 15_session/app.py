@@ -23,11 +23,11 @@ def disp_login():
     print(request.args)
     print("***DIAG: request.headers ***")
     print(request.headers)
-    if 'user' in session:
+    if 'user' in session:  # checks to see if there is a session
         user = session['user']
         loadText = "Click the button below to logout."
         return render_template("response.html", username=user, request_method=request.method, message=loadText)
-    else:
+    else:  # return login page
         landingText = "Enter your username below to proceed."
         return render_template('login.html', message=landingText)
 
@@ -48,11 +48,11 @@ def response():
     loadText = ""
     user = ""
     passw = ""
-    if 'user' in session:
+    if 'user' in session:  # checks to see if there is a session, if there is show response page
         user = session['user']
         loadText = "Click the button below to logout."
         return render_template("response.html", username=user, request_method=request.method, message=loadText)
-    else:
+    else:  # check for any username/password errors
         if request.method == 'GET':
             user = request.args['username']
             passw = request.args['password']
@@ -68,7 +68,7 @@ def response():
         elif user0 == user and passw0 != passw:
             loadText = "Could not log in. Password is wrong."
             return render_template("login.html", message=loadText)
-        else:
+        else:  # if username and password match, show response page
             session['user'] = user
             loadText = "Click the button below to logout."
             return render_template("response.html", username=user, request_method=request.method, message=loadText)
