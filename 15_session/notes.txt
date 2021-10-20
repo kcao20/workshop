@@ -19,3 +19,5 @@ If user is not already logged in, we can check to see if the username and
 password matches. If not, we just print an error on the login page,
 prompting them to login again. If the credentials match, we add it to
 the session dictionary.
+
+Exception Handling Source: https://www.geeksforgeeks.org/python-try-except/

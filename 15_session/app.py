@@ -53,25 +53,32 @@ def response():
         loadText = "Click the button below to logout."
         return render_template("response.html", username=user, request_method=request.method, message=loadText)
     else:  # check for any username/password errors
-        if request.method == 'GET':
-            user = request.args['username']
-            passw = request.args['password']
-        elif request.method == 'POST':
-            user = request.form['username']
-            passw = request.form['password']
-        if user0 != user and passw0 != passw:
-            loadText = "Could not log in. User and password wrong."
+        try:
+            if request.method == 'GET':
+                user = request.args['username']
+                passw = request.args['password']
+            elif request.method == 'POST':
+                user = request.form['username']
+                passw = request.form['password']
+        # handles the case where people try to type the "auth" route
+        # directly into the url
+        except:
+            loadText = "Nice try, Black Hat Hacker. Now try again - and this time, the right way."
             return render_template("login.html", message=loadText)
-        elif user0 != user and passw0 == passw:
-            loadText = "Could not log in. User is wrong."
-            return render_template("login.html", message=loadText)
-        elif user0 == user and passw0 != passw:
-            loadText = "Could not log in. Password is wrong."
-            return render_template("login.html", message=loadText)
-        else:  # if username and password match, show response page
-            session['user'] = user
-            loadText = "Click the button below to logout."
-            return render_template("response.html", username=user, request_method=request.method, message=loadText)
+        else:
+            if user0 != user and passw0 != passw:
+                loadText = "Could not log in. User and password wrong."
+                return render_template("login.html", message=loadText)
+            elif user0 != user and passw0 == passw:
+                loadText = "Could not log in. User is wrong."
+                return render_template("login.html", message=loadText)
+            elif user0 == user and passw0 != passw:
+                loadText = "Could not log in. Password is wrong."
+                return render_template("login.html", message=loadText)
+            else:  # if username and password match, show response page
+                session['user'] = user
+                loadText = "Click the button below to logout."
+                return render_template("response.html", username=user, request_method=request.method, message=loadText)
 
 
 @app.route("/logout")
