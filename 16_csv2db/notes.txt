@@ -1,4 +1,19 @@
 Team The Best Laptop - Jonathan Wu [Loki] , Alif Abdullah [The Eagle in the Sand], Kevin Cao [Pipi] | Period 2
 SoftDev
-K16 - All About Database
+K16 - All About Database/Using sqlite3 and python together/As a group, we learned using sqlite3 and python together into: creating a db, reading a csv and then inserting data into a db table.
 2021-10-20
+Time Spent: 90 minutes
+
+The commands "select * from <table_name>" will give us all the queries of the
+table from <table_name>. However, research conducted using the following
+webpage (https://www.tutorialspoint.com/sqlite/sqlite_where_clause.htm) has
+informed that, using the key-word WHERE allows us to select certain rows, whose
+value for a certain column follows some condition.
+
+If you want to check if there is data within a db, you can use db.fetchone() or
+db.fetchall() to see if there anything. The method returns the dictionary so
+you can compare it to a [].
+
+The usage of f-string formatting allows one to easily integrate variable values
+within strings. Here is the general format: f"blah blah blah {cool_var_name}",
+where cool_var_name has been defined.
