@@ -1,0 +1,7 @@
+Jonathan Wu [Loki], Alif Abdullah [The Eagle in the Sand], Kevin Cao [Pipi]
+SoftDev
+K17 -- To create a design document on establishing a wiki using Flask, Python, and SQLite
+2021-10-25
+time spent: 0.7 hours
+
+Site map documents are harder to create than initially thought.
