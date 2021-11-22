@@ -1,0 +1,7 @@
+Team Pirap: Kevin Cao, Han Zhang
+SoftDev
+K18: Comic Sans Syndrome
+2021-11-22
+
+Internal and External css are basically the same. External css keeps things neater.
+Inline css can get really messy and confusing
