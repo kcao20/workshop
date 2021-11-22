@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #707070;
+    border: solid 10px #5b5b5b;
+    margin: 0;
+    padding: 0;
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    font-family: Calibri;
+}
+
+h1 {
+    background-color: #cccccc;
+    margin: 0;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    width: 18%;
+    height: 90%;
+    padding-left: 2%;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    width: 75%;
+    height: 90%;
+}
+
+footer {
+    background-color: #464545;
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+    text-align: right;
+    font-size: x-large;
+    color: lightgray;
+}
