@@ -1,0 +1,7 @@
+Team Pirap: Kevin Cao, Han Zhang
+SoftDev
+K19: A RESTful Journey Skyward
+2021-11-23
+
+API giving us data in JSON format makes it very easy to work with.
+Noticed slight delay before image is loaded.
