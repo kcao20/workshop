@@ -3,5 +3,7 @@ SoftDev
 K23: No. 2?       
 2021-12-01
 
-Similar to bootstrap in the sense that it was very easy to implement.
+Similar to bootstrap in the sense that it was very easy to implement. All you have to do is link the CSS and JS.
+Both of these frameworks have sass to customize the different classes.
+However, there isn't as much documentation on it compared to bootstrap.
 Team Ducks did a good job showing the grid system.
