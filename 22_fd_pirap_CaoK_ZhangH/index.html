@@ -1,0 +1,102 @@
+<!doctype html>
+<!--
+Team Pirap: Kevin Cao, Han Zhang
+SoftDev
+K22: Who Does Frame Work For?
+2021-11-29
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation by KC and HZ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+  </head>
+  <body style="padding: 20px;">
+
+    <!-- Start Top Bar -->
+
+
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">Our ducks:</li>
+          <li><a href="#">Pipi</a></li>
+          <li><a href="#">And</a></li>
+          <li><a href="#">Sirap</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+
+    <div class="callout large primary">
+      <div class="row column text-center">
+        <h1>Intro to Foundation: Three Top Features</h1>
+        <h2 class="subheader">Ducks: Kevin Cao (Pipi), Han Zhang (Sirap)</h2>
+      </div>
+    </div>
+
+    <!-- We can now combine rows and columns when there's only one column in that row -->
+    <div class="row medium-8 large-7 columns">
+      <div class="blog-post">
+        <h3>Simpler and fewer CSS styles <small>11/29/2021</small></h3>
+        <p>Foundation includes pre-built HTML templates created by the community, like this one.</p>
+        <div class="callout">
+          <ul class="menu simple">
+            <li><a href="#">Author: YC and JL</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <h3>Easy-to-use grid system <small>11/30/2021</small></h3>
+          <div class="grid-x">
+          <div class="cell large-auto">This</div>
+          <div class="cell large-auto">Is</div>
+          <div class="cell large-auto">An</div>
+          <div class="cell large-auto">Example</div>
+          <div class="cell large-auto">Of</div>
+          <div class="cell large-auto">Utilizing</div>
+          <div class="cell large-auto">A</div>
+          <div class="cell large-auto">Grid</div>
+          <div class="cell large-auto">System</div>
+        </div>
+        <br>
+        <br>
+        <p>You can easily create grids of your desired size, and the source code to create different grid sizes is intuitive. Nested grids are also easy to create.</p>
+        <div class="callout">
+          <ul class="menu simple">
+            <li><a href="#">Author: YC and JL</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <h3>Sass = Lots of Customization <small>11/30/2021</small></h3>
+        <p>Foundation is built on Sass. Mixins allows the developer to create their own components based on underlying Foundation styles. Using Sass variables makes
+        modifying your website easier and makes the HTML source code cleaner.
+        <dl>
+          <dt>DIY!</dt>
+          <dd>It makes customization of styles more efficient and allows for faster development.
+          Foundation gives the front-end developer <strong> full control </strong> over their user interfaces.</dd>
+        </dl>
+        <blockquote>Foundation also doesn’t force any style language on the developer..<cite>YC and JL</cite></blockquote>
+        </p>
+        <div class="callout">
+          <ul class="menu simple">
+            <li><a href="#">Author: YC and JL</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

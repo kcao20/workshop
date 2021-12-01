@@ -1,0 +1,7 @@
+Team Pirap: Kevin Cao & Han Zhang
+SoftDev
+K23: No. 2?       
+2021-12-01
+
+Similar to bootstrap in the sense that it was very easy to implement.
+Team Ducks did a good job showing the grid system.
