@@ -1,0 +1,8 @@
+
+ssh sudo@ip
+sudo apt update && sudo apt upgrade
+sudo apt install apache2
+sudo ufw allow in "Apache"
+sudo ufw status
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04
