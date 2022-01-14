@@ -4,11 +4,15 @@
 2. Add an SSH key (recommended), or a password for your VM
 3. SSH into your VM through your own terminal or the DigitalOcean website
 4. Update by running ``` $ apt update && apt upgrade ```
-5. Install Apache2 by running ```$ apt install apache2```
-6. Allow Apache through the firewall ```$ ufw allow in "Apache"``` 
-7. Activate your firewall using ```$ ufw enable``` and ```$ ufw status``` to check if your firewall is enabled and Apache is allowed through it
 
 ## Adding a user account
 
 1. While you are in the root directory, add a user using ```$ useradd username```
 2. Add the user to the sudo group using ``` $ usermod -aG sudo username ```
+3. TODO: SSH STUFF
+
+## Installing Apache
+3. Install Apache2 by running ```$ apt install apache2```
+4. Allow Apache through the firewall ```$ ufw allow in "Apache"``` 
+5. Allow SSH through the firewall ```$ ufw allow OpenSSH```
+6. Activate your firewall using ```$ ufw enable``` and ```$ ufw status``` to check if your firewall is enabled and Apache is allowed through it
