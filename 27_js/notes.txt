@@ -1,7 +1,8 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
-SoftDev pd0
+The Adjective Nouns :: Noakai Aronesty, Kevin Cao
+SoftDev pd2
 K27 -- Basic functions in JavaScript
-2022-02-03r
+2022-02-04
+--------------------------------------------------
 
 DISCO
 -----------------------------------------------------------------
@@ -15,4 +16,3 @@ QCC
 * Huh?
 * Whuh now?
 =================================================================
-
