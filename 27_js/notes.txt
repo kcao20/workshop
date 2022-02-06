@@ -6,13 +6,16 @@ K27 -- Basic functions in JavaScript
 
 DISCO
 -----------------------------------------------------------------
-* Ooooh, ___
-* Aaah-haa!  ____...
+* JS functions are really easy to write -> They are very similar
+  to python; the only difference is you replace  ':' with open
+  and close braces.
+* The browser console is just like a python console when used to
+  run the functions
+* console.log() can be used as a print statement
 =================================================================
 
 QCC
 -----------------------------------------------------------------
-* Why...?
-* Huh?
-* Whuh now?
+* How do we use the output from JS and display it on the HTML
+  page?
 =================================================================
