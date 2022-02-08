@@ -27,3 +27,15 @@ function fib(n) {
     return fib(n - 1) + fib(n - 2)
   }
 }
+
+function gcd(a, b) {
+  if (a == b) {
+    return a
+  } else {
+    if (a > b) {
+      return gcd((a - b), b)
+    } else {
+      return gcd(a, (b - a))
+    }
+  }
+}
