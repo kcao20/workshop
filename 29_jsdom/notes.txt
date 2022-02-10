@@ -1,0 +1,4 @@
+document.getElementByID(<ID>)
+document.createElement(<HTML TAB NAME>)
+element.setattribute(<name>, <VALUE>)
+element.getAttribute(<name>)
