@@ -1,23 +1,3 @@
-/*
-   your PPTASK:
-   
-   Test drive each bit of code in this file,
-    and insert comments galore, indicating anything
-     you discover,
-      have questions about,
-        or otherwise deem notable.
-      	
-        Write with your future self or teammates in mind.
-      	
-        If you find yourself falling out of flow mode, consult 
-        other teams
-        MDN
-
-   A few comments have been pre-filled for you...
-   
-   (delete this block comment once you are done)
-*/
-
 // Team The Adjective Nouns :: Noakai Aronesty, Kevin Cao
 // SoftDev pd0
 // K27 -- Basic functions in JavaScript
@@ -32,13 +12,11 @@ console.log("AYO");
 var i = "hello";
 var j = 20;
 
-
 //assign an anonymous fxn to a var
 var f = function (x) {
   var j = 30;
   return j + x;
 };
-
 
 //instantiate an object
 var o = {
@@ -51,7 +29,7 @@ var o = {
   }
 };
 
-
+// add text to end of list
 var addItem = function (text) {
   var list = document.getElementById("thelist");
   var newitem = document.createElement("li");
@@ -59,13 +37,13 @@ var addItem = function (text) {
   list.appendChild(newitem);
 };
 
-
+// remove item n from list
 var removeItem = function (n) {
   var listitems = document.getElementsByTagName('li');
   listitems[n].remove();
 };
 
-
+// turns all li to red, doesn't override existing class with color
 var red = function () {
   var items = document.getElementsByTagName("li");
   for (var i = 0; i < items.length; i++) {
@@ -73,7 +51,7 @@ var red = function () {
   }
 };
 
-
+// add stripes to list, only visible on li without class -> doesn't override
 var stripe = function () {
   var items = document.getElementsByTagName("li");
   for (var i = 0; i < items.length; i++) {
@@ -87,35 +65,54 @@ var stripe = function () {
 
 //insert your implementations here for...
 // FIB
-var fib = function (n) {
-  if (n < 2) {
-    return n
-  } else {
-    return fib(n - 1) + fib(n - 2)
+let fib = function (n) {
+  let a = 0, b = 1, temp
+  for (let i = 0; i < n; i++) {
+    temp = a + b
+    a = b, b = temp
   }
+  return a
 }
+
 // FAC
-var fact = function (n) {
+let fact = function (n) {
   if (n > 2) {
     return fact(n - 1) * n
   } else {
     return n
   }
 }
+
 // GCD
-var gcd = function (a, b) {
-  if (a === b) {
-    return a
-  } else if (a > b) {
-    return gcd(a - b, b)
+let gcd = function (a, b) {
+  if (b) {
+    return gcd(b, a % b)
   } else {
-    return gcd(a, b - a)
+    return Math.abs(a)
   }
 }
 
-var handle_click = function () {
-  console.log(gcd(48, 18))
+const fact_click = function () {
+  let n = prompt("Enter n");
+  addItem("Factorial of " + n + " is " + fact(n))
 }
 
-var data = document.getElementById("button");
-data.addEventListener('click', handle_click)
+const fib_click = function () {
+  let n = prompt("Enter n");
+  addItem("The " + n + "th number of the fib sequence is " + fib(n))
+}
+
+const gcd_click = function () {
+  let x = prompt("Enter the first number");
+  let y = prompt("Enter the second number");
+  addItem("The greatest common denominator of " + x + " and " + y + " is " + gcd(x, y))
+}
+
+let a = document.getElementById("fact");
+a.addEventListener('click', fact_click)
+
+let b = document.getElementById("fib");
+b.addEventListener('click', fib_click)
+
+let c = document.getElementById("gcd");
+c.addEventListener('click', gcd_click)
