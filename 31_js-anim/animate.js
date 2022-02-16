@@ -1,12 +1,11 @@
 // Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
-// SoftDev pd0
+// SoftDev pd2
 // K31 -- canvas based JS animation
 // 2022-02-15t
 
 // model for HTML5 canvas-based animation
 
 // SKEELTON
-
 
 //access canvas and buttons via DOM
 var c = document.getElementById("playground"); // GET CANVAS
@@ -19,23 +18,24 @@ var ctx = c.getContext("2d"); // YOUR CODE HERE
 //set fill color to team color
 ctx.fillStyle = "blue"; // YOUR CODE HERE
 
-var requestID;  //init global var for use with animation frames
-
+var requestID; //init global var for use with animation frames
 
 //var clear = function(e) {
 var clear = (e) => {
   ctx.clearRect(0, 0, 500, 500);
   // YOUR CODE HERE
-};
-
+}
 
 var radius = 0;
 var growing = true;
 
 //var drawDot = function() {
 var drawDot = () => {
-  console.log("drawDot invoked...")
-  clear()
+  if (requestID) {
+    stopIt();
+  }
+  console.log("drawDot invoked...");
+  clear();
   if (radius >= 250) {
     growing = false;
   } else if (radius <= 0) {
@@ -51,28 +51,12 @@ var drawDot = () => {
   ctx.stroke();
   ctx.fill();
   requestID = window.requestAnimationFrame(drawDot);
-  // YOUR CODE HERE
-
-  /*
-    ...to
-    Wipe the canvas,
-    Repaint the circle,
-
-    ...and somewhere (where/when is the right time?)
-    Update requestID to propagate the animation.
-    You will need
-    window.cancelAnimationFrame()
-    window.requestAnimationFrame()
-
-   */
-};
-
+}
 
 //var stopIt = function() {
 var stopIt = () => {
-  cancelAnimationFrame(requestID)
-};
+  cancelAnimationFrame(requestID);
+}
 
-
-dotButton.addEventListener( "click", drawDot );
-stopButton.addEventListener( "click",  stopIt );
+dotButton.addEventListener("click", drawDot);
+stopButton.addEventListener("click", stopIt);
