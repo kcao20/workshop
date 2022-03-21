@@ -7,7 +7,7 @@
 
 ## Adding a user account
 
-1. While you are in the root directory, add a user using ```$ useradd username```
+1. While you are in the root directory, add a user using ```$ adduser username```
 2. Add the user to the sudo group using ``` $ usermod -aG sudo username ```
 3. If you used a SSH key for root, password authentication is probably disabled for SSH so copy your local public key to the new user’s ~/.ssh/authorized_keys file to log in successfully using ```rsync --archive --chown=username:username ~/.ssh /home/username```
 4. From now, everything should be done on the user account you created
