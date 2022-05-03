@@ -1,0 +1,12 @@
+- NOSQL
+	- instead of tables, collections & documents
+- Collections
+	- Many documents
+		- Set of field-value pairs
+- Atlas
+	- Database in the cloud
+	- Deploy clusters
+		- Replica Sets
+			- Connected MongoDB instances with same data
+				- Instance: single machine running a certain software
+			- Redundancy

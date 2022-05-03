@@ -1,0 +1,23 @@
+- Updating documents = working in JSON
+- BSON = Binary JSON
+	- Speed, Space, Flexiblity
+	- Support for dates, raw binary
+- Stored in BSON, view in JSON
+- mongo(dump/restore) -> bson, mongo(export/import) -> json
+- URI string = Uniform Resource Identifier
+	- srv = secure
+- Search using field, value pair
+- commands
+	- show dbs
+		- shows list of databases
+	- use <database>
+	- show collections
+	- db.<collection>.find( {field:value} )
+		- shows first 20
+		- .count()
+		- .pretty()
+	- it
+		- iterates through a cursor
+		- pointer = direct address of memory location
+
+- shell is fully functions js interpretor
