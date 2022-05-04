@@ -1,0 +1,18 @@
+- Every document has a unique "_id"
+	- required in every document
+	- default value is ObjectID()
+- Collections are automatically created
+	- beware of typos
+- insert order()
+	- unorderded, adds all unique
+- MQL
+	- updateOne()
+	- updateMany()
+	- $inc => increments specified value
+	- $set => set specified value
+		- add if doesn't exist
+	- $push => add element to array field
+	- deleteOne()
+		- Should only use when using "_id" value
+	- deleteMany()
+	- drop() collections
