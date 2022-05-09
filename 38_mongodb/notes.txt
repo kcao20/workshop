@@ -1,0 +1,49 @@
+- Comparison operators
+	- $eq		equal to
+	- $ne		not equal to
+	- $gt		greater than
+	- $lt		less than
+	- $gte		greater than or equal to
+	- $lte		less than or equal to
+	- e.g. {<field>: {<operator>: <value>}}
+	- $eq is used as default operator when an operator is not specified
+
+- Logic operators
+	- $and		match all
+	- $or		at least one
+	- $nor		fail to match both
+	- $not		negates query
+	- e.g. {"$<operator>": [{<clause1>}, {<clause2>}, ...]}
+	- $and is used as default operator when an operator is not specified
+
+- Expressive operators
+	- $expr		allows the use of aggregation expressions
+	{ $expr: { <expression> } }
+
+- $
+	- Denote operator
+	- Addressing the field value
+
+- Array operators
+	- $push
+		- add element to Array
+		- turns a field into an array field if it was previously a diff type
+
+- Order matters for arrays
+	- $all (includes)
+	- $size (len)
+
+- Projections filter your results to only the keys you want
+	- e.g. db.<collection>.find({<query>}, {<projection>})
+		- 0 to exclude
+		- 1 to include
+		- cannot mix and match except for _id
+
+- $elemMatch
+	- matches documents that contain an array field with as least one element that matche the query
+	- projects only the array element with at least one element that matches query
+
+- dot notation goes deeper one level
+	- zero index
+
+- $regex
