@@ -1,0 +1,7 @@
+- aggregation framework
+    - aggregate can do more than just find
+    - pipeline (order of operations matters)
+
+- $group takes incoming data and groups it
+    - does not modify data
+- $sum
