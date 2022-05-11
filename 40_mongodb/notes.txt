@@ -1,0 +1,6 @@
+- Atlas
+	- shows index and performance
+	- create aggregation pipelines
+- realms
+- charts
+- compass
