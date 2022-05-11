@@ -5,3 +5,21 @@
 - $group takes incoming data and groups it
     - does not modify data
 - $sum
+- cursor methods
+	- $sort
+	- $limit
+	- mongodb sorts before limitting regardless of the order you type it
+- indexes
+	- createIndex
+- data modeling
+	- a way to organize fields
+	- who is using the data
+- upsert
+	- hybrid of update & insert
+	- false by default
+	- if match:
+			update
+	  else:
+			insert
+	
+	- e.g. db.collection.updateOne({<query>},{<update>},{"upsert":true})
